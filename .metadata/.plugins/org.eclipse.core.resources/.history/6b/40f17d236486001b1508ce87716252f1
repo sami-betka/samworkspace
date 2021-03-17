@@ -1,0 +1,6 @@
+package combibet.entity;
+
+
+public class HorseRacingBet extends Bet{
+
+}

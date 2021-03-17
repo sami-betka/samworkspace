@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="template">
+
+<head>
+<meta charset="utf-8">
+<title>Détails produit</title>
+<!-- <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" /> -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"><link rel="stylesheet" type="text/css" href="/css/test.css" />
+
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+
+
+
+</head>
+<body>
+
+	<!-- 	<div id="fond"> -->
+	<!-- 		<img src="https://www.agadvi.com/assets/images/photo1.jpg" -->
+	<!-- 			alt="arriere" /> -->
+	<!-- 	</div> -->
+
+	<div th:replace="_nav :: blackheader">...</div>
+	<div th:replace="_nav :: header">...</div>
+	<div th:replace="_nav :: navb">...</div>
+
+
+
+
+
+	<!-- 	<div class="marginlist"> -->
+	<!-- col-md-9 Begin -->
+	<div class="box">
+		<!-- box Begin -->
+		<div class="row">
+			<div class="col-md-1"></div>
+
+
+			<div class="col-md-3 shadowcard"
+				style="margin-right: 5px; padding: 0px;">
+				<img th:src="${product.picture}" class="sizeimage2"
+					alt="Responsive image">
+			</div>
+
+			<div class="col-md-7 shadowcard returnline"
+				style="background-color: white;">
+				<h5 class="card-title text-dark"
+					style="text-align: center; font-weight: bold; margin-top: 5px;"
+					th:utext="${product.name}"></h5>
+					
+				<p class="text-dark" style="text-align: center"
+					th:utext="${product.description}"></p>
+				<!--.........................-->
+				<hr>
+				<div class="col-md-12 text-dark" style="text-align: center; font-weight: bold;">
+					<p th:utext="'Prix:  '+${product.price} + ' €'"></p>
+					<p th:utext="'Quantité restante:  '+${product.stock}"></p>
+					
+					
+					<div>
+						<a  id="add" th:if="${product.stock > 0 and product.canBeAdd == true}"
+						class=" text-white" th:href="@{'/users/add-to-order3/'+${product.id}}"
+						style="border-radius: 6px; background: #2691d9;">Ajouter à ma
+						commande</a>
+					<!-- 						<a -->
+					<!-- 						th:if="${p.stock > 0 and p.canBeAdd == false and !#lists.contains(orderproductsids, p.id)}" -->
+					<!-- 						data-toggle="popover" data-trigger="focus" tabindex="0" -->
+					<!-- 						title="Action impossible" -->
+					<!-- 						data-content="Quantité maximale atteinte" class=" text-white" -->
+					<!-- 						style="border-radius: 6px; background-color: red;">Ajouter à -->
+					<!-- 						ma commande</a>  -->
+					<a th:if="${product.stock > 0 and product.canBeAdd == false}"
+						data-toggle="popover" data-trigger="focus" tabindex="0"
+						title="Action impossible"
+						data-content="Quantité maximale atteinte. Article déja ajouté à votre commande"
+						class=" text-white"
+						style="border-radius: 6px; background-color: red;">Ajouter à
+						ma commande</a> <a th:if="${product.stock <= 0}" class="text-dark"
+						style="border-radius: 6px; font-weight: bold;">Epuisé</a>
+
+				</div>
+				             
+				             	<!-- </div> -->
+				             	
+<!-- 					<div style=" text-align: center; padding-bottom: 5px;"> -->
+<!-- 						<a th:if="${product.stock > 0}" class=" text-white navcolor" -->
+<!-- 							th:href="@{'/users/add-to-order/'+${product.id}}" -->
+<!-- 							style="border-radius: 6px;">Ajouter à ma -->
+<!-- 							commande</a>  -->
+							
+<!-- 							<a th:if="${product.stock <= 0}" class=" text-dark" -->
+<!-- 							style="border-radius: 6px; font-weight: bold;">Epuisé</a> -->
+
+<!-- 					</div> -->
+				</div>
+
+
+			</div>
+
+
+		</div>
+	</div>
+	<!-- box Finish -->
+
+	<!-- 		<div> -->
+
+	<div th:replace="_nav :: buttonup">...</div>
+	<div th:replace="_nav :: footer">...</div>
+
+	<script src="https://unpkg.com/feather-icons"></script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	
+	<script type="text/javascript" th:src="@{/js/test.js}"></script>
+		
+</body>
+</html>

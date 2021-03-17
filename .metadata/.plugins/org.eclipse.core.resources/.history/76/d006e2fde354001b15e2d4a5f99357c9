@@ -1,0 +1,45 @@
+package javaExercices;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Consumer;
+
+public class MainClass<T> {
+
+	public static List<List<String>> splitBatch(List<String> list, int n) {
+
+		int nbBatch = (list.size() + n - 1 ) /n;
+
+		List<List<String>> result = new ArrayList<>();
+
+		for (int i = 0; i < nbBatch; i++) {
+			result.add(list.subList(i * nbBatch, Math.min((i + 1) * nbBatch, list.size())));
+		}
+
+		return result;
+	}
+
+	public static <T> List<List<T>> modifiedSplitBatch(List<T> list, int n) {
+
+		int nbBatch = (list.size() + n - 1 ) /n;
+
+		List<List<T>> result = new ArrayList<>();
+
+		for (int i = 0; i < nbBatch; i++) {
+			result.add(list.subList(i * nbBatch, Math.min((i + 1) * nbBatch, list.size())));
+		}
+
+		return result;
+	}
+
+	public static void main(String[] args) {
+		
+		List<User> users = new ArrayList<>();
+		
+//		  Consumer<User> printTextInHexConsumer = u -> u.getAge() +1;
+		
+
+		users.forEach(u -> u.setAge(u.getAge()+1));
+	}
+
+}

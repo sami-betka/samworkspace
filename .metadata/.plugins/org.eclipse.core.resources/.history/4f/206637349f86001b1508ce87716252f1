@@ -1,0 +1,14 @@
+package combibet.entity;
+
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
+@Data
+//@EqualsAndHashCode(callSuper=false)
+public class HorseRacingBet extends Bet {
+
+	private int meeting;
+
+	private int race;
+
+}

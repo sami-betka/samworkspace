@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;combibet/src/main/resources/templates/addbet.html&apos; to &apos;add-horse-racing-bet.html&apos;" description="Rename resource &apos;addbet.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/templates/addbet.html" name="add-horse-racing-bet.html" stamp="1615932273171" updateReferences="true"/>
+</session>

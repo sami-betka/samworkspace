@@ -1,0 +1,47 @@
+package cote.controllers;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class MainController {
+	
+	@GetMapping
+	public String getHome (Model model) {
+		
+		 Map<String, Integer> data = new LinkedHashMap<String, Integer>();
+	        data.put("JAVA", 50);
+	        data.put("Ruby", 20);
+	  	        
+		model.addAttribute("data", data);
+		
+		return "index";
+	}
+	
+	@GetMapping("/index.html")
+	public String getIndex () {
+		
+		return "index";
+	}
+	
+	@GetMapping("/buttons.html")
+	public String getButtons () {
+		
+		return "buttons";
+	}
+	@GetMapping("/cards.html")
+	public String getCards () {
+		
+		return "cards";
+	}
+	@GetMapping("/404.html")
+	public String get404 () {
+		
+		return "404";
+	}
+
+}

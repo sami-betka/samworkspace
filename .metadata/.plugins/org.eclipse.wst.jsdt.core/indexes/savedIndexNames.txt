@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\Users\s.betka\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+155378115.index
+4263258428.index
+4130549836.index
+1447243029.index
+1904634775.index
+3910864292.index
+981503634.index

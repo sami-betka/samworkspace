@@ -1,0 +1,22 @@
+package combibet.service;
+
+import org.springframework.stereotype.Service;
+
+import combibet.entity.Bet;
+import combibet.entity.HorseRacingBet;
+import combibet.entity.SportBet;
+
+@Service
+public class BetService {
+	
+	Bet addHorseRacingBet () {
+				
+		return new HorseRacingBet();
+	}
+	
+	Bet addSportBet () {
+		
+		return new SportBet();
+	}
+
+}

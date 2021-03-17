@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="template">
+<head>
+<title>Liste des produits</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+<link rel="stylesheet" type="text/css" th:href="@{/css/orderstable.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/css/test.css}" />
+
+
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+
+
+</head>
+
+<body>
+	<div th:replace="_nav :: blackheader">...</div>
+	<div th:replace="_nav :: header">...</div>
+	<div th:replace="_nav :: navb">...</div>
+
+
+
+
+
+
+
+	<div class="container-fluid" style="text-align: center;">
+		<h1 class="text-dark" style="margin-bottom: 20px;">Mes
+			informations</h1>
+
+		<div class="row">
+
+
+			<div class="col-md-1"></div>
+			<div class="col-md-10" style="background-color: #fefee0; padding-top: 15px;">
+
+
+				<div class="row">
+					<div class="col-md-6" style="text-align: left;">
+
+						<ul>
+							<li style="margin-bottom: 10px;"><span
+								style="font-weight: bold;">Nom d'utilisateur : </span> <span
+								th:text="${user.userName}"></span></li>
+							<li style="margin-bottom: 10px;"><span
+								style="font-weight: bold;">Prénom : </span> <span
+								th:text="${user.firstName}"></span></li>
+							<li style="margin-bottom: 10px;"><span
+								style="font-weight: bold;">Nom : </span> <span
+								th:text="${user.lastName}"></span></li>
+							<li style="margin-bottom: 10px;"><span
+								style="font-weight: bold;">Adresse : </span> <span
+								th:text="${user.adress}"></span></li>
+							<li style="margin-bottom: 10px;"><span
+								style="font-weight: bold;">Email : </span> <span
+								th:text="${user.email}"></span></li>
+						</ul>
+
+					</div>
+					<div class="col-md-6" style="text-align: left;">
+
+						<ul>
+							<li style=" margin-bottom: 10px;"><span style="font-weight: bold; margin-bottom: 10px;">Nombre
+									de commandes : </span> <span th:text="${#lists.size(user.orders)}"></span></li>
+							<li style=" margin-bottom: 10px;"><span style="font-weight: bold;">Téléphone : </span> <span
+								th:text="${user.phoneNumber}"></span></li>
+
+							<li style=" margin-bottom: 10px;"><span style="font-weight: bold; margin-bottom: 10px;">Informations
+									bancaires : </span> <span>FR76 **** **** **67</span></li>
+
+						</ul>
+
+					</div>
+
+				</div>
+
+
+
+			</div>
+			<div class="col-md-1"></div>
+
+		</div>
+		<div style="text-align: center; padding-top: 30px;">
+			<a class="text-white navcolor"
+				th:href="@{/users/edit-myinfos}" role="button">Modifier
+				mes informations</a>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+	<div th:replace="_nav :: buttonup">...</div>
+	<div th:replace="_nav :: footer">...</div>
+
+	<script src="https://unpkg.com/feather-icons"></script>
+	<script type="text/javascript" th:src="@{/js/test.js}"></script>
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

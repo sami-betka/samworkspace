@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="template">
+<head>
+<title>Modifier utilisateur</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<!-- <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" /> -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<link rel="stylesheet" type="text/css" th:href="@{/css/cardproject.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/css/test.css}" />
+
+
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+
+
+</head>
+<body>
+
+	<div th:replace="_nav :: blackheader">...</div>
+	<div th:replace="_nav :: header">...</div>
+		<div th:replace="_nav :: navb">...</div>
+	
+
+<div class="alert text-center text-white"
+			th:if="${createsuccess eq true}" style="font-weight: bold; background-color: red; margin-bottom: 10px; margin-left: 30px; margin-right: 30px;">
+			Les informations envoyées ne sont pas valides</div>
+
+
+	<form class="register-form" th:action="@{/admin/update-user}" th:object="${user}" method="POST">  
+        
+<!--             <div class="login-form__logo-container"> -->
+<!--                 <img class="login-form__logo" src="https://via.placeholder.com/350x150" alt="Logo"> -->
+<!--             </div> -->
+            <div class="register-form__content">
+                <div class="register-form__header text-white">Modifier utilisateur</div>
+             
+                <input type="hidden" class="register-form__input" th:field="*{userId}" required="true" placeholder="">
+                <input class="register-form__input" type="text" th:field="*{userName}" required="true" placeholder="Nom d'utilisateur">
+                <input class="register-form__input" type="text" th:field="*{lastName}" required="true" placeholder="Nom">
+                <input class="register-form__input" type="text" th:field="*{firstName}" required="true" placeholder="Prénom">
+                <input class="register-form__input" type="text" th:field="*{adress}" required="true" placeholder="Adresse">
+                <input class="register-form__input" type="email" th:field="*{email}" required="true" placeholder="Adresse mail">
+                <input class="register-form__input" type="password" th:field="*{encrytedPassword}" required="true" placeholder="Mot de passe">
+              
+                <button class="register-form__button" type="submit">Envoyer</button>
+              
+            </div>
+				</form>
+
+
+
+	<div th:replace="_nav :: buttonup">...</div>
+
+	<div th:replace="_nav :: footer">...</div>
+	
+	<script src="https://unpkg.com/feather-icons"></script>
+<!--     <script type="text/javascript" th:src="@{/js/test.js}"></script> -->
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+		    <script type="text/javascript" th:src="@{/js/test.js}"></script>
+		
+</body>
+</html>

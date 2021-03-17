@@ -1,0 +1,5 @@
+package cote.controllers;
+
+public class BetController {
+
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="template">
+<head>
+<title>Paiement</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+
+<link rel="stylesheet" href="animate.min.css" />
+
+<!-- <link rel="stylesheet" type="text/css" th:href="@{/css/cardproject.css}" /> -->
+<link rel="stylesheet" type="text/css" th:href="@{/css/test.css}" />
+
+
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+
+</head>
+<body>
+
+	<div th:replace="_nav :: blackheader">...</div>
+	<div th:replace="_nav :: header">...</div>
+	<div th:replace="_nav :: navb">...</div>
+
+
+
+
+
+
+<div class="">
+    <div class="row">
+        <div class="container-fluid d-flex justify-content-center">
+            <div class="col-sm-8 col-md-6">
+                <div class="card shadowcard">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-md-6"> <span>PAIEMENT CARTE DE CREDIT/DEBIT</span> </div>
+                            <div class="col-md-6 text-right" style="margin-top: -5px;"> <img src="https://img.icons8.com/color/36/000000/visa.png"> <img src="https://img.icons8.com/color/36/000000/mastercard.png"> <img src="https://img.icons8.com/color/36/000000/amex.png"> </div>
+                        </div>
+                    </div>
+                    <div class="card-body" style="height: 350px">
+                        <div class="form-group"> <label for="cc-number" class="control-label">NUMERO DE CARTE</label> <input id="cc-number" type="tel" class="input-lg form-control cc-number" autocomplete="cc-number" placeholder="•••• •••• •••• ••••" required> </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group"> <label for="cc-exp" class="control-label">D'EXPIRATION</label> <input id="cc-exp" type="tel" class="input-lg form-control cc-exp" autocomplete="cc-exp" placeholder="•• / ••" required> </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group"> <label for="cc-cvc" class="control-label">CODE CVC</label> <input id="cc-cvc" type="tel" class="input-lg form-control cc-cvc" autocomplete="off" placeholder="••••" required> </div>
+                            </div>
+                        </div>
+                        <div class="form-group"> <label for="numeric" class="control-label">TITULAIRE DE LA CARTE</label> <input type="text" class="input-lg form-control"> </div>
+                        
+<!--                         <p> -->
+<!--   <a class="btn btn-success has-spinner" style="text-align: center;" onclick="location.href='/users/order/validate';"> -->
+<!--     <span class="spinner"><i class="fa fa-refresh fa-spin"></i></span> Payer -->
+<!--   </a> -->
+<!-- </p> -->
+                        
+                        
+                        <div class="form-group" id="btnSpinner"> <input value="PAYER" type="button" class="btn btn-success btn-lg form-control" style="font-size: .8rem;" onclick="location.href='/users/order/validate';"> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+	<div th:replace="_nav :: buttonup">...</div>
+	<div th:replace="_nav :: footer">...</div>
+
+
+	<script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.payment/3.0.0/jquery.payment.min.js"></script>
+ 
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+
+	<script type="text/javascript" th:src="@{/js/test.js}"></script>
+
+</body>
+</html>

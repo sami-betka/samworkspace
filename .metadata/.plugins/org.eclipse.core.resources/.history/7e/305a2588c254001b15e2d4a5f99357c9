@@ -1,0 +1,19 @@
+package javaExercices;
+
+public class Optionel <T>{
+	
+	private T instance;
+
+	public Optionel(T instance) {
+		super();
+		this.instance = instance;
+	}
+
+
+	public boolean isPresent() {
+
+		
+		return null;
+	}
+
+}

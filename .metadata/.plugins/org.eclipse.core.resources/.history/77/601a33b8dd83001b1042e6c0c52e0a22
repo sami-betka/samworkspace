@@ -1,0 +1,32 @@
+package combibet.controller;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import combibet.repository.BetRepository;
+
+@Controller
+public class MainController {
+	
+	@Autowired
+	BetRepository betRepository;
+
+	@GetMapping("/dashboard")
+	public String home(Model model) {
+		
+		Map<Long, Double> surveyMap = new LinkedHashMap<>();
+		surveyMap.put(1l, 1d);
+		surveyMap.put(3l, 3d);
+		surveyMap.put(5l, 5d);
+	model.addAttribute("surveyMap", surveyMap);
+		
+		return "dashboard";
+	}
+	
+
+}

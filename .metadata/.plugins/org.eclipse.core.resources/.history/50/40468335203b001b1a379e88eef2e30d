@@ -1,0 +1,83 @@
+package cote.controllers;
+
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import cote.entity.Bet;
+
+@Controller
+public class MainController {
+	
+	@GetMapping("/test")
+	public String getTest (Model model) {
+		
+		 Map<String, Integer> data = new LinkedHashMap<String, Integer>();
+	        data.put("JAVA", 20);
+	        data.put("Ruby", 30);
+	        data.put("Angular", 40);
+	        data.put("PHP", 50);
+	        data.put("JS", 60);
+	  	        
+		model.addAttribute("data", data);
+		
+		return "test";
+	}
+	
+	@GetMapping
+	public String getHome (Model model) {
+		
+		 Map<String, Integer> data = new LinkedHashMap<String, Integer>();
+		    data.put("JAVA", 20);
+	        data.put("Ruby", 30);
+	        data.put("Angular", 40);
+	        data.put("PHP", 50);
+	        data.put("JS", 60);
+		model.addAttribute("data", data);
+		
+		return "index";
+	}
+	
+	@GetMapping("/index.html")
+	public String getIndex () {
+		
+		return "index";
+	}
+	
+	@GetMapping("/buttons.html")
+	public String getButtons () {
+		
+		return "buttons";
+	}
+	@GetMapping("/cards.html")
+	public String getCards () {
+		
+		return "cards";
+	}
+	@GetMapping("/404.html")
+	public String get404 () {
+		
+		return "404";
+	}
+///////////////////////////////////////////////////////////////////////
+	
+	private void courbe (List<Bet> bets) {
+		
+		 Map<Integer, Double> data = new LinkedHashMap<Integer, Double>();
+
+		 for(int i=0; i<bets.size(); i++) {
+			
+			data.put(i+1, moreOrLess());	
+		}
+	}
+	
+	private double moreOrLess () {
+		
+		return null;
+	}
+
+}

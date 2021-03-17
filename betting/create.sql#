@@ -1,0 +1,1141 @@
+
+    create table bet (
+       id bigint not null,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table app_user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table app_user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table app_user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table app_user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table app_user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table app_user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table app_user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table app_user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table app_user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table app_user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table app_user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table app_user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table app_user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table app_user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table app_user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table app_user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table app_user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table app_user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table app_user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table app_user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table app-user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table app-user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table app-user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table app-user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table app-user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table app-user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table app-user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table app-user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table app-user (
+       id bigint not null auto_increment,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    ) engine=MyISAM
+
+    create table bet (
+       id bigint not null auto_increment,
+        cote double precision not null,
+        date datetime,
+        race integer not null,
+        reunion integer not null,
+        selection varchar(255),
+        won bit not null,
+        primary key (id)
+    ) engine=MyISAM
+
+    create table combi (
+       id bigint not null auto_increment,
+        primary key (id)
+    ) engine=MyISAM

@@ -1,0 +1,32 @@
+package combibet.entity;
+
+public enum BetType {
+	
+	SIMPLE_GAGNANT("Simple gagnant"),
+	SIMPLE_PLACE("Football");
+	COUPLE_GAGNANT();
+	COUPLE_PLACE();
+	COUPLE_ORDRE();
+	TRIO();
+	TRIO_ORDRE();
+	TIERCE();
+	2/4();
+	MULTI();
+	COMBI();
+
+	
+	private String name; 
+	
+	private BetType(String name) {
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+}

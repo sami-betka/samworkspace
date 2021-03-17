@@ -1,0 +1,448 @@
+@charset "ISO-8859-1";
+
+  .verticalline{
+        border-left: 1px solid green;
+        display: inline-block;
+        height: 1400px;
+        margin: 0 35px;
+        margin-top: 132px;
+  }
+
+/* Flèche vers haut de la page */
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: red;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 4px;
+	margin-bottom: 80px;
+}
+
+#myBtn:hover {
+	background-color: #555;
+}
+/* ///////////////////////////////////////////////////////////////// */
+
+/* Payment page */
+.padding {
+	padding: 5rem !important
+}
+
+.form-control:focus {
+	box-shadow: 10px 0px 0px 0px #ffffff !important;
+	border-color: #4ca746
+}
+
+/* //////////////////////////////////////////////////////////////// */
+
+/*  Ecrire texte sur image */
+.contenant {
+	position: relative;
+	text-align: center;
+	color: red;
+}
+
+.texte_centrer {
+	background-color: white;
+	position: absolute;
+	top: 89%;
+	left: 27.6%;
+	transform: translate(-0%, -40%);
+	max-height: 39px;
+	min-width: 170px;
+}
+
+.idoncard {
+	background-color: white;
+	position: absolute;
+	top: 9px;
+	left: auto;
+	transform: translate(-0%, -40%);
+	max-height: 39px;
+	min-width: 33px;
+}
+/* //////////////////////////////////////////////////////////// */
+body {
+	background-color: #F5F5B8 !important;
+	
+	
+/* 	background-color: #fefee0 !important; */
+	/* 	background-image: url(https://www.agadvi.com/assets/images/photo1.jpg);  */
+	/* 	background-image: url(https://www.telerama.fr/sites/tr_master/files/styles/simplecrop455/public/walking_dead_0_0.jpg?itok=h6kvBcPz&sc=3723d20398fda9082b18b84f0ac8f722);  */
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+	/* 	    	        background-image:    */
+	/* 		          top, transparent black, faked with gradient */
+	/* 		          linear-gradient(   */
+	/* 		            rgba(0, 0, 0, 0.9),    */
+	/* 		            rgba(0, 0, 0, 0.9)   */
+	/* 		          ) */
+	/* 		            url(https://www.agadvi.com/assets/images/photo1.jpg)  */
+	/* 		          !important;   */
+}
+/* Header/Blog Title */
+.header {
+/* 		padding: 30px; */
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 25px;
+	margin-right: 25px;
+/*     background-color: #fefee0; */
+    }
+    
+.divcolor{
+	margin-left: 25px;
+	margin-right: 25px;
+    background-color: #fefee0;
+        padding-bottom: 10px;
+    
+}    
+
+.header h1 {
+	font-size: 50px;
+}
+
+.header p {
+	font-size: 25px;
+}
+
+.welcomeright {
+	font-size: 20px ! important;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	text-align: right;
+}
+
+.welcomeleft {
+	font-size: 20px ! important;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-left: 50px;
+	text-align: right;
+}
+
+/* Style the top navigation bar */
+.topnav {
+	overflow: hidden;
+}
+
+.navcolor {
+	/* 		background-color: #5278B9; */
+	background-color: green;
+}
+
+.degrade {
+	background: -webkit-linear-gradient(30deg, blue, yellow);
+}
+.invdegrade{
+	background:-webkit-linear-gradient(30deg, red, green);
+}
+
+nav {
+	margin-bottom: 20px;
+}
+
+/* Style the topnav links */
+.topnav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+/* Footer */
+.footer {
+	padding: 20px;
+	text-align: center;
+	/* 	background: #ddd; */
+	margin-top: 30px;
+	/* 	margin-bottom: 0px !important; */
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+/* * { */
+/* 	box-sizing: border-box; */
+/* } */
+.margin10 {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.margin2 {
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+.padding10 {
+	padding-left: 8%;
+	padding-right: 8%;
+}
+
+.shadowtext {
+	text-shadow: 2px 2px green;
+	/* 	 text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; */
+}
+
+.bordertext {
+	color: yellow;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.returnline {
+	word-wrap: break-word;
+	/*   -webkit-hyphens: auto; */
+	/*   -moz-hyphens: auto; */
+	/*   -ms-hyphens: auto; */
+	/*   hyphens: auto; */
+}
+
+.blink{
+    animation: Blink 1s infinite;
+}
+@keyframes Blink{
+    0%{opacity: 1;}
+    50%{opacity: 0.3;}
+    100%{opacity: 1;}
+}
+.shadowcard {
+	/*   width: 250px; */
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0
+		rgba(0, 0, 0, 0.69);
+	text-align: center;
+}
+
+.sizeimage {
+	width: 100%;
+	height: 180px;
+}
+
+.sizeimage2 {
+	width: 100%;
+	height: 250px;
+}
+
+.sizelogo {
+	width: 100px;
+	height: 100px;
+}
+
+.sizelittlelogo {
+	width: 60px;
+	height: 60px;
+}
+
+/* Float four columns side by side */
+.column {
+	float: left;
+	width: 31.33%;
+	height: 25%;
+	/* 	padding: 0 10px; */
+	/* 	padding-bottom: 15px; */
+	/* 	border-style: outset; */
+	margin: 1%;
+}
+
+.column2 {
+	float: left;
+	width: 100%;
+	height: 25%;
+	/* 	padding: 0 10px; */
+	/* 	padding-bottom: 15px; */
+	/* 	border-style: outset; */
+	margin-bottom: 15px !important;
+	margin: 1%;
+}
+/* .divider { */
+/*   width: 1px; */
+/*   margin: 6px 0; */
+/*   background: blue; */
+/* } */
+
+/* Remove extra left and right margins, due to padding */
+/* .row {	 */
+/* 	  	margin: 0 -5px;   */
+/* 	 padding-left: 10%;  */
+/* 	 padding-right: 10%;  */
+/* } */
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.box {
+	
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+	.column {
+		width: 100%;
+		display: block;
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.column2 {
+		width: 100%;
+		display: block;
+		margin-bottom: 20px;
+	}
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: rgba(67, 68, 68, 0.7);
+}
+
+.image:hover .overlay {
+	opacity: 1;
+}
+
+.detail {
+	color: #fff;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+.buy {
+	background-color: black;
+	opacity: 0.6;
+	color: #434444;
+	border-radius: 0;
+	border: 1px solid #434444;
+	width: 100%;
+	margin-top: 5px;
+}
+
+.buy:hover {
+	background-color: #434444;
+	color: #fff;
+}
+
+.container {
+	padding-top: 10px;
+}
+
+hr {
+	width: 300px;
+	border: 3px solid #434444;
+}
+
+/* Login Form */
+.register-form, .register-form * {
+	box-sizing: border-box;
+	font-family: 'Source Sans Pro';
+}
+
+.register-form {
+	max-width: 350px;
+	margin: 0 auto;
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+.register-form__logo-container {
+	padding: 30px;
+	background: rgba(0, 0, 0, 0.25);
+}
+
+.register-form__logo {
+	display: block;
+	max-width: 125px;
+	margin: 0 auto;
+}
+
+.register-form__content {
+	padding: 30px;
+	background: #5278B9;
+}
+
+.register-form__header {
+	margin-bottom: 15px;
+	text-align: center;
+	color: #333333;
+}
+
+.register-form__input {
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 2px solid #dddddd;
+	background: #ffffff;
+	outline: none;
+	transition: border-color 0.5s;
+}
+
+.register-form__input:focus {
+	border-color: #009578;
+}
+
+.register-form__input::placeholder {
+	color: #aaaaaa;
+}
+
+.register-form__button {
+	padding: 10px;
+	color: #ffffff;
+	font-weight: bold;
+	background: black;
+	width: 100%;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.register-form__button:active {
+	background: black;
+}
+
+.register-form__links {
+	margin-top: 15px;
+	text-align: center;
+}
+
+.register-form__link {
+	font-size: 0.9em;
+	color: red;
+	text-decoration: none;
+}
+
+/* Login end.... */

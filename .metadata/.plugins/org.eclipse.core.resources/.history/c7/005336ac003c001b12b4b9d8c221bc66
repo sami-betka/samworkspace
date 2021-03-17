@@ -1,0 +1,69 @@
+package cote.entity;
+
+import java.io.Serializable;
+import java.util.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+public class Bet implements Serializable{
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	@Id
+	private Long id;
+	private Date date;
+	private int race;
+	private int reunion;
+	private double cote;
+	private boolean won;
+	
+	public Date getDate() {
+		return date;
+	}
+	public void setDate(Date date) {
+		this.date = date;
+	}
+	public int getRace() {
+		return race;
+	}
+	public void setRace(int race) {
+		this.race = race;
+	}
+	public int getReunion() {
+		return reunion;
+	}
+	public void setReunion(int reunion) {
+		this.reunion = reunion;
+	}
+	public boolean isWon() {
+		return won;
+	}
+	public void setWon(boolean won) {
+		this.won = won;
+	}
+	public double getCote() {
+		return cote;
+	}
+	public void setCote(double cote) {
+		this.cote = cote;
+	}
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+}

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="template">
+<head>
+<title>List</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+
+<link rel="stylesheet" href="animate.min.css" />
+
+<link rel="stylesheet" type="text/css" th:href="@{/css/defile.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/css/test2.css}" />
+
+
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+
+</head>
+<body>
+
+	<div th:replace="_nav :: blackheader">...</div>
+	<div th:replace="_nav :: header">...</div>
+	<div th:replace="_nav :: navb">...</div>
+	<div th:replace="_nav :: def">...</div>
+
+
+	<div class="container-fluid">
+		<div class="alert alert-success text-center text-dark"
+			th:if="${addsuccess eq true}" style="font-weight: bold;">Article ajouté avec succès</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="row">
+
+					<div class="col-md-8"
+						style="margin-left: 30px; background-color: #fefee0;">
+
+						<!-- pagination -->
+						<nav style="margin-top: 25px;" aria-label="Pagination"
+							th:if="${pageProducts.totalPages gt 0}">
+							<ul class="pagination justify-content-center font-weight-medium">
+
+								<li th:unless="${pageProducts.number - 10 < 0}"
+									class="page-item shadowcard">
+									<!-- <li class="page-item shadowcard" --> <!-- 				
+				th:classappend="${pageProducts.number - 10 < 0} ? 'disabled'"> --> <a
+									class="page-link"
+									th:href="@{/products/list?page={id}(id=${pageProducts.number -10})}"
+									th:text="-10" title="-10" rel="tooltip" style="height: 40.5px;"></a>
+								</li>
+
+								<li class="page-item shadowcard"
+									th:classappend="${pageProducts.number eq 0} ? 'disabled'"><a
+									class="page-link svg-icon"
+									th:href="@{/products/list?page={id}(id=${pageProducts.number lt 2 ? 0 : pageProducts.number -1})}"
+									aria-label="Previous" title="Previous Page" rel="tooltip">
+										<span aria-hidden="true" data-feather="chevrons-left"
+										width="20" height="20"></span>
+								</a></li>
+
+
+								<li class="page-item shadowcard"
+									th:if="${i != pageProducts.totalPages}"
+									th:classappend="${i eq pageProducts.number} ? 'active'"
+									th:each="i : ${#numbers.sequence( pageProducts.number, pageProducts.totalPages > 10 + pageProducts.number ? pageProducts.number + 10 : pageProducts.totalPages, 1)}">
+									<a class="page-link"
+									th:classappend="${i eq pageProducts.number} ? 'degrade' : text-dark"
+									th:href="@{/products/list?page={id}(id=${i})}"
+									th:text="${i} + 1" th:title="${'Page '+ i}" rel="tooltip"
+									style="height: 40.5px;"></a>
+								</li>
+								<li class="page-item disabled shadowcard"
+									th:if="${pageProducts.number + 10 < pageProducts.totalPages}">
+									<a class="page-link svg-icon" href="#"> <span
+										data-feather="more-horizontal" width="20" height="20"></span>
+								</a>
+								</li>
+								<li
+									th:unless="${pageProducts.number + 10 >= pageProducts.totalPages}"
+									class="page-item shadowcard">
+									<!-- 			<li class="page-item shadowcard" --> <!-- 				th:classappend="${pageProducts.number + 10 >= pageProducts.totalPages} ? 'disabled'"> -->
+									<a class="page-link svg-icon"
+									th:href="@{/products/list?page={id}(id=${pageProducts.number + 10})}"
+									aria-label="Next" title="+ 10" rel="tooltip"> <span
+										aria-hidden="true" data-feather="chevrons-right" width="20"
+										height="20"></span>
+								</a>
+								</li>
+							</ul>
+						</nav>
+
+
+
+
+
+
+
+
+
+
+						<div class="container">
+
+							<div class="row"
+								style="margin-top: 3px; margin-left: 3px; margin-right: 3px;">
+
+								<!-- 			<tr th:each="p:${pageProducts.content}"> -->
+
+
+								<div th:each="p:${pageProducts.content}"
+									class="column shadowcard">
+
+									<div class="card image">
+										<div class="contenant">
+											<a th:href="@{'/products/details/' + ${p.id}}"> <img
+												th:src="${p.picture}" class="sizeimage">
+												<div class="overlay">
+													<div class="detail">
+														Voir Détails <i data-feather="zoom-in"></i>
+													</div>
+												</div>
+												<div class="texte_centrer">
+													<span th:if="${p.stock lt 100 and p.stock gt 0}"
+														class="text-danger blink"
+														style="margin-left: 3px; font-weight: bold;">
+														Quantité restante :<span th:utext="' ' + ${p.stock}"></span>
+													</span> <span th:if="${p.stock <= 0}" class="text-dark"
+														style="margin-left: 1px; font-weight: bold;">
+														Produit epuisé </span>
+												</div>
+												<div class="idoncard">
+													<span th:utext="${p.id}" class="text-dark"
+														style="margin-left: 1px; font-weight: bold;"> </span>
+												</div>
+
+											</a>
+										</div>
+									</div>
+
+									<!--                           partie basse -->
+									<div style="background-color: white;">
+										<h5 class="text-dark" style="margin-left: 3px;"
+											th:utext="${p.name}"></h5>
+										<p class="text-dark" style="margin-left: 3px;"
+											th:utext="'Prix: ' + ${p.price} + ' €'"></p>
+										<a th:if="${p.stock > 0 and p.canBeAdd == true}"
+											class=" text-white"
+											th:href="@{'/users/add-to-order/'+${p.id} + '?page=' + ${pageProducts.number}}"
+											style="border-radius: 6px; background: #2691d9;">Ajouter
+											à ma commande</a>
+										<!-- 						<a -->
+										<!-- 						th:if="${p.stock > 0 and p.canBeAdd == false and !#lists.contains(orderproductsids, p.id)}" -->
+										<!-- 						data-toggle="popover" data-trigger="focus" tabindex="0" -->
+										<!-- 						title="Action impossible" -->
+										<!-- 						data-content="Quantité maximale atteinte" class=" text-white" -->
+										<!-- 						style="border-radius: 6px; background-color: red;">Ajouter à -->
+										<!-- 						ma commande</a>  -->
+										<a th:if="${p.stock > 0 and p.canBeAdd == false}"
+											data-toggle="popover" data-trigger="focus" tabindex="0"
+											title="Action impossible"
+											data-content="Quantité maximale atteinte. Article déja ajouté à votre commande"
+											class=" text-white"
+											style="border-radius: 6px; background-color: red;">Ajouter
+											à ma commande</a> <a th:if="${p.stock <= 0}" class="text-dark"
+											style="border-radius: 6px; font-weight: bold;">Epuisé</a>
+
+									</div>
+								</div>
+								<!-- 			</tr> -->
+							</div>
+						</div>
+
+
+						<!-- pagination -->
+						<nav style="margin-top: 25px;" aria-label="Pagination"
+							th:if="${pageProducts.totalPages gt 0}">
+							<ul class="pagination justify-content-center font-weight-medium">
+
+
+								<li th:unless="${pageProducts.number - 10 < 0}"
+									class="page-item shadowcard">
+									<!-- 			<li class="page-item shadowcard" --> <!-- 				th:classappend="${pageProducts.number - 10 < 0} ? 'disabled'"> -->
+									<a class="page-link"
+									th:href="@{/products/list?page={id}(id=${pageProducts.number -10})}"
+									th:text="-10" title="-10" rel="tooltip" style="height: 40.5px;"></a>
+								</li>
+
+								<li class="page-item shadowcard"
+									th:classappend="${pageProducts.number eq 0} ? 'disabled'"><a
+									class="page-link svg-icon"
+									th:href="@{/products/list?page={id}(id=${pageProducts.number lt 2 ? 0 : pageProducts.number -1})}"
+									aria-label="Previous" title="Previous Page" rel="tooltip">
+										<span class="text-dark" aria-hidden="true"
+										data-feather="chevrons-left" width="20" height="20"></span>
+								</a></li>
+
+
+								<li class="page-item shadowcard"
+									th:if="${i != pageProducts.totalPages}"
+									th:classappend="${i eq pageProducts.number} ? 'active'"
+									th:each="i : ${#numbers.sequence( pageProducts.number, pageProducts.totalPages > 10 + pageProducts.number ? pageProducts.number + 10 : pageProducts.totalPages, 1)}">
+									<a class="page-link"
+									th:classappend="${i eq pageProducts.number} ? 'degrade' : text-dark"
+									th:href="@{/products/list?page={id}(id=${i})}"
+									th:text="${i} + 1" th:title="${'Page '+ i}" rel="tooltip"
+									style="height: 40.5px;"></a>
+								</li>
+								<li class="page-item disabled shadowcard"
+									th:if="${pageProducts.number + 10 < pageProducts.totalPages}">
+									<a class="page-link svg-icon" href="#"> <span
+										data-feather="more-horizontal" width="20" height="20"></span>
+								</a>
+								</li>
+								<li
+									th:unless="${pageProducts.number + 10 >= pageProducts.totalPages}"
+									class="page-item shadowcard">
+									<!-- 			<li class="page-item shadowcard" --> <!-- 				th:classappend="${pageProducts.number + 10 >= pageProducts.totalPages} ? 'disabled'"> -->
+									<a class="page-link svg-icon"
+									th:href="@{/products/list?page={id}(id=${pageProducts.number + 10})}"
+									aria-label="Next" title="+ 10" rel="tooltip"> <span
+										class="text-dark" aria-hidden="true"
+										data-feather="chevrons-right" width="20" height="20"></span>
+								</a>
+								</li>
+							</ul>
+						</nav>
+
+					</div>
+
+					<!-- 					<div class="col-md-1"> -->
+					<!-- 					    <span class="verticalline shadowcard"></span> -->
+					<!-- 					</div> -->
+
+					<div class="col-md-3"
+						style="margin-left: 50px; background-color: #fefee0;">
+						<div class="text-white invdegrade shadowcard"
+							style="margin-left: 5%; width: 90%; padding-top: 7px; text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 20px; height: 40px;">
+							TOP 5 des ventes</div>
+
+						<div class="container">
+							<div class="row"
+								style="margin-top: 3px; margin-left: 3px; margin-right: 3px;">
+								<div th:each="p:${pageProductsTop5}" class="column2 shadowcard">
+									<div class="card image">
+										<div class="contenant">
+											<a th:href="@{'/products/details/' + ${p.id}}"> <img
+												th:src="${p.picture}" class="sizeimage">
+												<div class="overlay">
+													<div class="detail">
+														Voir Détails <i data-feather="zoom-in"></i>
+													</div>
+												</div>
+												<div class="texte_centrer">
+													<span th:if="${p.stock lt 100 and p.stock gt 0}"
+														class="text-danger blink"
+														style="margin-left: 3px; font-weight: bold;">
+														Quantité restante :<span th:utext="' ' + ${p.stock}"></span>
+													</span> <span th:if="${p.stock <= 0}" class="text-dark"
+														style="margin-left: 1px; font-weight: bold;">
+														Produit epuisé </span>
+												</div>
+												<div class="idoncard">
+													<span th:utext="${p.id}" class="text-dark"
+														style="margin-left: 1px; font-weight: bold;"> </span>
+												</div>
+
+											</a>
+										</div>
+									</div>
+
+									<!--                           partie basse -->
+									<div style="background-color: white;">
+										<h5 class="text-dark" style="margin-left: 3px;"
+											th:utext="${p.name}"></h5>
+										<p class="text-dark" style="margin-left: 3px;"
+											th:utext="'Prix: ' + ${p.price} + ' €'"></p>
+										<a th:if="${p.stock > 0 and p.canBeAdd == true}"
+											class=" text-white"
+											th:href="@{'/users/add-to-order/'+${p.id} + '?page=' + ${pageProducts.number}}"
+											style="border-radius: 6px; background: #2691d9;">Ajouter
+											à ma commande</a>
+										<!-- 						<a -->
+										<!-- 						th:if="${p.stock > 0 and p.canBeAdd == false and !#lists.contains(orderproductsids, p.id)}" -->
+										<!-- 						data-toggle="popover" data-trigger="focus" tabindex="0" -->
+										<!-- 						title="Action impossible" -->
+										<!-- 						data-content="Quantité maximale atteinte" class=" text-white" -->
+										<!-- 						style="border-radius: 6px; background-color: red;">Ajouter à -->
+										<!-- 						ma commande</a>  -->
+										<a th:if="${p.stock > 0 and p.canBeAdd == false}"
+											data-toggle="popover" data-trigger="focus" tabindex="0"
+											title="Action impossible"
+											data-content="Quantité maximale atteinte. Article déja ajouté à votre commande"
+											class=" text-white"
+											style="border-radius: 6px; background-color: red;">Ajouter
+											à ma commande</a> <a th:if="${p.stock <= 0}" class="text-dark"
+											style="border-radius: 6px; font-weight: bold;">Epuisé</a>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-1"></div>
+
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+		<div th:replace="_nav :: buttonup">...</div>
+		<div th:replace="_nav :: footer">...</div>
+
+
+		<script src="https://unpkg.com/feather-icons"></script>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"></script>
+
+		<script type="text/javascript" th:src="@{/js/test.js}"></script>
+</body>
+</html>

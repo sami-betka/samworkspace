@@ -1,0 +1,5 @@
+package combibet.repository;
+
+public interface BetRepository {
+
+}

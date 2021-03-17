@@ -1,0 +1,4 @@
+spring.datasource.url=jdbc:postgresql://     :5432/combibet
+spring.datasource.username=
+spring.datasource.password=
+

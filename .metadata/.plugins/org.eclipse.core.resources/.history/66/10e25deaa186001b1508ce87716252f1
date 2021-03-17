@@ -1,0 +1,13 @@
+package combibet.entity;
+
+import javax.persistence.Entity;
+
+import lombok.Data;
+
+//@Data
+@Entity
+public class SportBet extends Bet{
+
+
+	
+}

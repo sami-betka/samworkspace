@@ -1,0 +1,29 @@
+package cote;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+import cote.entity.User;
+import cote.repository.UserRepository;
+import stock.entity.UserRole;
+import stock.utils.EncrytedPasswordUtils;
+
+@SpringBootApplication
+public class CoteApplication {
+
+	public static void main(String[] args) {
+		ApplicationContext ctx = SpringApplication.run(CoteApplication.class, args);
+		
+		UserRepository userRepository = ctx.getBean(UserRepository.class);
+
+		
+		if (userRepository.findById(1l) == null) {
+			User user = new User();
+			user.setFirstName("Emilie");
+			user.setLastName("Milou");
+			
+			userRepository.save(user);
+		}	}
+
+}

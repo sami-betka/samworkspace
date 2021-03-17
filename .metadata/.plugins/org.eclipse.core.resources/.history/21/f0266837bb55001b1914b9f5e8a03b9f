@@ -1,0 +1,39 @@
+package with;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.event.ApplicationReadyEvent;
+import org.springframework.context.event.EventListener;
+
+import with.services.HomeService;
+
+@SpringBootApplication
+public class WithSpringApplication {
+	
+	@Autowired
+	HomeService homeService;
+	
+	public static void main(String[] args) {
+		SpringApplication.run(WithSpringApplication.class, args);
+		
+	
+		Home home = new Home();
+		Room room1 = new Room();
+		Room room2 = new Room();
+		
+		room1.setLargeur(15);
+		room1.setLongueur(20);
+		room2.setLargeur(10);
+		room2.setLongueur(30);
+		
+		home.getRooms().add(room1);
+		home.getRooms().add(room2);
+		
+	}
+	@EventListener(ApplicationReadyEvent.class)
+	public void doSomethingAfterStartup() {
+	    System.out.println("hello world, I have just started up");
+	}
+
+}

@@ -1,0 +1,19 @@
+package combibet.entity;
+
+import java.util.Date;
+
+import javax.persistence.Entity;
+
+import lombok.Data;
+
+@Entity
+@Data
+public class Bet {
+
+	private Long id;
+	private Date date;
+	private int meeting;
+	private int race;
+	private String selection;
+	private BetResult result;
+}

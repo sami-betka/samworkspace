@@ -1,0 +1,13 @@
+package cote.entity;
+
+import javax.persistence.Entity;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@Entity
+public class Report {
+
+}
